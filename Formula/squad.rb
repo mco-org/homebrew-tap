@@ -1,25 +1,25 @@
 class Squad < Formula
   desc "Multi-AI-agent terminal collaboration daemon with MCP server and workflow engine"
   homepage "https://github.com/mco-org/squad"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/mco-org/squad/releases/download/v#{version}/squad-aarch64-apple-darwin.tar.gz"
-      sha256 "46ff50ec378116fd5899a79aae7fdbede5b83bc90aefb405b355e9c8251765f3"
+      sha256 "6056bde0c5d712f301cf7c8ffbbf3e1a0b8e06e263b90ff1ae716ebeee3e09da"
     end
 
     on_intel do
       url "https://github.com/mco-org/squad/releases/download/v#{version}/squad-x86_64-apple-darwin.tar.gz"
-      sha256 "eb0488ef6583ca5998737b5ce1a3188dbd0a8b76b94cf7b43e2cb056475be029"
+      sha256 "62348df29f50d15a9973650862b7b2516e4f409b45704bd7b5f6274919794387"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mco-org/squad/releases/download/v#{version}/squad-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "51e1f2cf6ef907c01a59b7996aa2c34cf07c55b3c761f8c11c2e5f9b58655af2"
+      sha256 "e24088017691afa6c6b005cc396da6b8f844b386154e0f0e76ffa9ae5ce7d5fe"
     end
   end
 
