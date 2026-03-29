@@ -28,7 +28,9 @@ class Squad < Formula
   end
 
   def post_install
-    system "#{bin}/squad", "setup"
+    %w[claude gemini codex opencode].each do |p|
+      system "#{bin}/squad", "setup", p
+    end
   end
 
   def caveats
